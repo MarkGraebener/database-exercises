@@ -1,14 +1,6 @@
 USE codeup_test_db;
 
-CREATE TABLE IF NOT EXISTS albums (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    artist VARCHAR(50) DEFAULT 'none',
-    album_name VARCHAR(50) DEFAULT 'none',
-    release_date INT UNSIGNED,
-    genra VARCHAR(50) DEFAULT 'none',
-    sales FLOAT UNSIGNED,
-    PRIMARY KEY (id)
-);
+
 INSERT INTO albums (artist, album_name, release_date, genre, sales)
 VALUES ( ‘Michael Jackson’, ‘Thriller’, 1982, ‘Pop’, 49.2),
          ( ‘AC/DC’, ‘Back in Black’, 1980, ‘Hard Rock’, 29.5),
