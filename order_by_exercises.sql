@@ -1,8 +1,8 @@
-USE employees_db;
+USE employees;
 
 SELECT * FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
-ORDER BY first_name, last_name DEC;
+ORDER BY first_name, last_name DESC;
 
 SELECT last_name FROM employees
 WHERE last_name LIKE 'E%';
