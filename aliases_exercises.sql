@@ -39,3 +39,15 @@ SELECT birth_date, CONCAT(first_name, ' ', last_name) AS full_name, gender
 FROM employees
 WHERE hire_date='1985-01-01'
   AND full_name='Arie Staelin';-- wrong !!!!
+
+
+
+USE employees;
+
+-- 1
+
+SELECT CONCAT(first_name, ' ', last_name) AS full_name
+FROM employees LIMIT 10;
+
+SELECT CONCAT(first_name, ' ', last_name) AS full_name, CONCAT(birth_date) AS DOB
+FROM employees LIMIT 10;
